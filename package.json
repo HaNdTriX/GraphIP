@@ -1,0 +1,40 @@
+{
+  "name": "GraphIP",
+  "version": "0.0.1",
+  "description": "Minimal Geolocation API endpoint based on GraphQL and Apollo.",
+  "main": "server.js",
+  "author": "Henrik Wenz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HaNdTriX/GraphIP.git"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon server",
+    "start": "NODE_ENV=production node server",
+    "lint": "standard"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "got": "^7.1.0",
+    "graphql": "^0.10.5",
+    "graphql-server-express": "^1.0.2",
+    "graphql-tools": "^1.1.0",
+    "jest": "^20.0.4",
+    "jest-cli": "^20.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "standard": "^10.0.2"
+  },
+  "engines": {
+    "node": ">=v8.1.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
