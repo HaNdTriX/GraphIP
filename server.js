@@ -5,6 +5,10 @@ const schema = require('./data/schema')
 
 const app = express()
 
+app.get('/', (req, res) => {
+  res.redirect('/graphiql')
+})
+
 app.use('/graphiql', graphiqlExpress({
   endpointURL: '/graphql'
 }))
